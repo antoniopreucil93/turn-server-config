@@ -26,3 +26,7 @@ TURN listener port for UDP and TCP listeners (Default: 3478). Note: actually, TL
 ## Min Port and Max Port
 
 Upper and lower bound of the UDP port range for relay.
+
+## lt-cred-mech
+
+Use long-term credentials mechanism (this one you need for WebRTC usage).
