@@ -14,3 +14,11 @@ Listener IP address of relay server.
 ## External IP (-X)
 
 TURN Server public/private address mapping, if the server is behind NAT. In that situation, if a -X is used in form "-X <ip>" then that ip will be reported as relay IP address of all allocations. This scenario works only in a simple case when one single relay address is be used, and no CHANGE_REQUEST functionality is required. That single relay address must be mapped by NAT to the 'external' IP.
+
+## Fingerprint
+
+Use fingerprints in the TURN messages. If an incoming request contains a fingerprint, then TURN server will always add fingerprints to the messages in this session, regardless of the per-server setting.
+
+## Listening Port
+
+TURN listener port for UDP and TCP listeners (Default: 3478). Note: actually, TLS & DTLS sessions can connect to the "plain" TCP & UDP port(s), too - if allowed by configuration.
