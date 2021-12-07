@@ -22,3 +22,7 @@ Use fingerprints in the TURN messages. If an incoming request contains a fingerp
 ## Listening Port
 
 TURN listener port for UDP and TCP listeners (Default: 3478). Note: actually, TLS & DTLS sessions can connect to the "plain" TCP & UDP port(s), too - if allowed by configuration.
+
+## Min Port and Max Port
+
+Upper and lower bound of the UDP port range for relay.
